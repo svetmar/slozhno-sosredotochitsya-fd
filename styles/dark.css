@@ -6,7 +6,11 @@
   --main-title-color: #DB00FF;
   --title-shadow-color: #FF0070;
   --paragraph-text-color: #000028;
+  --camera-frame-color: #FF0070;
   --hovered-button-border: rgba(255, 0, 112, 0.4);
+  --header-menu-color: #FF0070;
+  --section-title-color: #FF0070;
+  --card-title-color: #000028;
 }
 
 .theme-dark .header__rec-indicator {

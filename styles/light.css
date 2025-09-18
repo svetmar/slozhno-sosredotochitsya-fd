@@ -5,8 +5,12 @@
   --supporting-color: #353430;
   --main-title-color:  #FFC2E6;
   --title-shadow-color: #FF8DCB;
+  --camera-frame-color: #353430;
   --paragraph-text-color: #353430;
   --hovered-button-border: rgba(50, 49, 45, 0.4);
+  --section-title-color: #353430;
+  --header-menu-color: #353430;
+  --card-title-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -17,8 +21,16 @@
   --supporting-color: #353430;
   --main-title-color:  #FFC2E6;
   --title-shadow-color: #FF8DCB;
+  --camera-frame-color: #353430;
   --paragraph-text-color: #353430;
   --hovered-button-border: rgba(50, 49, 45, 0.4);
+  --section-title-color: #353430;
+  --header-menu-color: #353430;
+  --card-title-color: #353430;
+  }
+
+  .header__rec-indicator {
+    display: none;
   }
 }
 

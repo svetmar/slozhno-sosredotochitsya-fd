@@ -7,8 +7,21 @@
   --title-shadow-color: #FF0070;
   --main-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --paragraph-text-color: #000028;
+  --camera-frame-color: #FF0070;
   --hovered-button-border: rgba(255, 0, 112, 0.4);
+  --section-title-color: #FF0070;
+  --header-menu-color: #FF0070;
+  --card-title-color: #000028;
   --gap-length: 20px;
   --header-gallery-mb: 60px;
   --section-mb: 80px;
+}
+
+@media (width <= 376px) {
+  :root {
+    --header-gallery-mb: 40px;
+    --gap-length: 10px;
+    --section-mb: 50px;
+    --main-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
 }
