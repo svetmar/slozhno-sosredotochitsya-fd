@@ -16,12 +16,13 @@
   margin-bottom: var(--header-gallery-mb, 60px);
   margin-right: var(--gap-length, 20px);
   margin-left: var(--gap-length, 20px);
+  padding-bottom: 15px;
+  padding-top: 20px;
 }
 
 .header__theme-menu {
   justify-self: center;
   align-self: start;
-  padding-top: 21.5px;
 }
 
 .header__theme-menu-list {
@@ -116,11 +117,9 @@
 }
 
 .header__text-paragraph {
-  justify-self: end;
   align-self: center;
   grid-row: 3/4;
   max-width: 491px;
-  min-height: 71px;
   color: var(--paragraph-text-color, #000028);
   font-weight: bold;
   line-height: 23.4px;
@@ -166,12 +165,12 @@
   gap: 10px;
 }
 
-.card-list-item:not(:last-of-type) {
+/* .card-list-item:not(:last-of-type) {
   margin-bottom: 20px;
-}
+} */
 
 .card-link {
-  font-weight: bold;
+  font-weight: normal;
   line-height: 23.4px;
   text-shadow: 1px 1px 0px var(--accent-color, #ff0070);
   text-decoration: none;
@@ -282,7 +281,7 @@
   text-shadow: 4px 4px 0px var(--accent-color, #ff0070);
 }
 
-@media (width <= 769px) {
+@media (width < 769px) {
   .header {
     min-height: 1024px;
   }
@@ -297,19 +296,16 @@
   }
 
   .header__text-paragraph {
-    min-height: 117px;
     max-width: 364px;
-  }
-
-  .section {
-    grid-template-columns: 1fr;
   }
 
   .what__card-list {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+}
 
+@media (width < 768px) {
   .section__wrapper {
     display: block;
     grid-column: 1/2;
@@ -318,11 +314,18 @@
   .content-section {
     grid-template-columns: 1fr;
   }
+
+  .what__card-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 @media (width <= 376px) {
   .header {
+    margin-right: var(--gap-length, 10px);
     margin-left: var(--gap-length, 10px);
+    padding: 10px 0;
     min-height: 668px;
   }
 
@@ -334,13 +337,14 @@
     position: relative;
   }
 
-  .header__rec-indicator {
-    top: 10px;
-    right: 20px;
-  }
-
   .what__title {
     grid-column: 1/-1;
+  }
+
+  .how .section__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .gallery-content {
